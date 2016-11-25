@@ -3,12 +3,17 @@
 
 class Arithmetic {
 public:
+    // Constructors
     Arithmetic()
         : res(0.0)
-    {}
+    {
+        std::cout << "Arithmetic() ctor called" << std::endl;
+    }
     Arithmetic(int res)
         : res(res)
-    {}
+    {
+        std::cout << "Arithmetic(int ) ctor called " << std::endl;
+    }
 
     float add(int x, int y);
     float sub(int x, int y);
