@@ -17,11 +17,16 @@ TEST(ProgramTest, CalculatesResult) {
     // Set expectations
     EXPECT_CALL(prod._t, get_x()).Times(AtLeast(1));
     EXPECT_CALL(prod._t, get_y()).Times(AtLeast(1));
-    //EXPECT_CALL(prod._t, get_res_wrapper()).Times(AtLeast(1));
+    EXPECT_CALL(prod._t, get_res_wrapper()).Times(AtLeast(1));
+
 
     // Make calls to the methods.
     prod.get_x_val();
     prod.get_y_val();
+    prod.get_res();
+    prod.get_dynamic_sum(1, 2, 4);
+    //prod.get_dynamic_sum(3, 4, 5);
+    //prod.get_dynamic_sum(1, 2, 3, 4, 5);
 }
 
 int main(int argc, char *argv[])

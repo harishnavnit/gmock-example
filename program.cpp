@@ -50,3 +50,16 @@ void Program::set_div()
 {
     _ar.div(x, y);
 }
+
+/*
+int Program::get_res_wrapper()
+{
+    return get_res<int>();
+}
+*/
+/*
+double Program::get_res_wrapper()
+{
+    return get_res<double>();
+}
+*/
