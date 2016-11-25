@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
 
     std::cout << "result = " << pr.get_res<int>() << std::endl;
 
+    std::cout << "Dynamic sum of (2, 3, 5) = " << pr.compute_dynamic_sum(2, 3, 5) << std::endl;
+
     ::testing::InitGoogleMock(&argc, argv);
     return RUN_ALL_TESTS();
 }
