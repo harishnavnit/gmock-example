@@ -27,9 +27,9 @@ public:
     void set_y(int v);
 
     // Overloaded method
-    int compute_dynamic_sum(int x, int y, int z) {
-        return (x + y + z);
-    }
+    //int compute_dynamic_sum(int x, int y, int z) {
+    //    return (x + y + z);
+    //}
 
     // template methods
     template <class T>
