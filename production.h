@@ -11,7 +11,7 @@ public:
 
     // FIXME: This will fail
     int get_dynamic_sum(int a, int b, int c) {
-        return (int)_t.compute_dynamic_sum(a, b, c);
+        return _t.compute_dynamic_sum(a, b, c);
     }
 
     // Non-private member to access target class methods
