@@ -2,6 +2,7 @@
 #include <gmock/gmock.h>
 
 #include "program.h"
+#include "production.h"
 #include "arithmetic.h"
 #include "mock_program.h"
 #include "mock_arithmetic.h"
@@ -10,10 +11,17 @@ using ::testing::AtLeast;
 
 // Simple Test
 TEST(ProgramTest, CalculatesResult) {
-    MockProgram pa;
-    EXPECT_CALL(pa, get_x()).Times(AtLeast(1));
-    EXPECT_CALL(pa, get_y()).Times(AtLeast(1));
-    EXPECT_CALL(pa, get_res()).Times(AtLeast(1));
+    // Instantiate Production class with mock object
+    Production<MockProgram> prod;
+
+    // Set expectations
+    EXPECT_CALL(prod._t, get_x()).Times(AtLeast(1));
+    EXPECT_CALL(prod._t, get_y()).Times(AtLeast(1));
+    //EXPECT_CALL(prod._t, get_res_wrapper()).Times(AtLeast(1));
+
+    // Make calls to the methods.
+    prod.get_x_val();
+    prod.get_y_val();
 }
 
 int main(int argc, char *argv[])
