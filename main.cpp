@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     std::cout << "x = " << pr.get_x() << std::endl;
     std::cout << "y = " << pr.get_y() << std::endl;
 
-    std::cout << "result = " << pr.get_res() << std::endl;
+    std::cout << "result = " << pr.get_res<int>() << std::endl;
 
     ::testing::InitGoogleMock(&argc, argv);
     return RUN_ALL_TESTS();

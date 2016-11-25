@@ -10,10 +10,16 @@ float Program::get_y()
     return y;
 }
 
-float Program::get_res()
+/*
+ * Should be defined in header
+ *
+template <class T>
+T Program::get_res()
 {
-    return _ar.result();
+    return (T)_ar.result();
 }
+ *
+ */
 
 void Program::set_x(int v)
 {
