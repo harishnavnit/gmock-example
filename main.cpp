@@ -18,7 +18,7 @@ TEST(ProgramTest, CalculatesResult) {
 
 int main(int argc, char *argv[])
 {
-    Program pr;
+    Program<int> pr;
 
     std::cout << "x = " << pr.get_x() << std::endl;
     std::cout << "y = " << pr.get_y() << std::endl;

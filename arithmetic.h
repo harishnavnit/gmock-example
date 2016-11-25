@@ -1,24 +1,25 @@
 #ifndef ARITHMETIC_H
 #define ARITHMETIC_H
 
+template <class T>
 class Arithmetic {
 public:
     Arithmetic()
         : res(0.0)
     {}
-    Arithmetic(int res)
+    Arithmetic(T res)
         : res(res)
     {}
 
-    float add(int x, int y);
-    float sub(int x, int y);
-    float mul(int x, int y);
-    float div(int x, int y);
+    T add(T x, T y);
+    T sub(T x, T y);
+    T mul(T x, T y);
+    T div(T x, T y);
 
-    float result() { return res; }
+    T result() { return res; }
 
 private:
-    float res;
+    T res;
 };
 
 #include "arithmetic.cpp"

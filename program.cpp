@@ -1,46 +1,55 @@
 #include "program.h"
 
-float Program::get_x()
+template <class T>
+T Program<T>::get_x()
 {
     return x;
 }
 
-float Program::get_y()
+template <class T>
+T Program<T>::get_y()
 {
     return y;
 }
 
-float Program::get_res()
+template <class T>
+T Program<T>::get_res()
 {
     return _ar.result();
 }
 
-void Program::set_x(int v)
+template <class T>
+void Program<T>::set_x(T v)
 {
     x = v;
 }
 
-void Program::set_y(int v)
+template <class T>
+void Program<T>::set_y(T v)
 {
     y = v;
 }
 
-void Program::set_sum()
+template <class T>
+void Program<T>::set_sum()
 {
     _ar.add(x, y);
 }
 
-void Program::set_sub()
+template <class T>
+void Program<T>::set_sub()
 {
     _ar.sub(x, y);
 }
 
-void Program::set_mul()
+template <class T>
+void Program<T>::set_mul()
 {
     _ar.mul(x, y);
 }
 
-void Program::set_div()
+template <class T>
+void Program<T>::set_div()
 {
     _ar.div(x, y);
 }

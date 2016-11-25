@@ -1,24 +1,28 @@
 #include "arithmetic.h"
 
-float Arithmetic::add(int x, int y)
+template <class T>
+T Arithmetic<T>::add(T x, T y)
 {
     res = x + y;
     return res;
 }
 
-float Arithmetic::sub(int x, int y)
+template <class T>
+T Arithmetic<T>::sub(T x, T y)
 {
     res = x - y;
     return res;
 }
 
-float Arithmetic::mul(int x, int y)
+template <class T>
+T Arithmetic<T>::mul(T x, T y)
 {
     res = x * y;
     return res;
 }
 
-float Arithmetic::div(int x, int y)
+template <class T>
+T Arithmetic<T>::div(T x, T y)
 {
     res = x / y;
     return res;

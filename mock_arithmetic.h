@@ -19,8 +19,8 @@ public:
     //float mul(int x, int y);
     //float div(int x, int y);
 
-private:
-    Arithmetic _ar;
+//private:
+//    Arithmetic _ar;
 };
 
 #endif // MOCK_ARITHMETIC_H
