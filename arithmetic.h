@@ -6,10 +6,14 @@ class Arithmetic {
 public:
     Arithmetic()
         : res(0.0)
-    {}
+    {
+        std::cout << "Arithmetic() ctor called" << std::endl;
+    }
     Arithmetic(T res)
         : res(res)
-    {}
+    {
+        std::cout << "Arithmetic(T) ctor called" << std::endl;
+    }
 
     T add(T x, T y);
     T sub(T x, T y);

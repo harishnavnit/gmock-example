@@ -11,7 +11,7 @@ public:
         : x(0.0), y(0.0)
     {
         std::cout << "Program() ctor called" << std::endl;
-        _ar = Arithmetic<T>();
+        //_ar = Arithmetic<T>();
     }
 
     // Getter functions
