@@ -18,6 +18,7 @@ public:
     MOCK_METHOD1(set_x, void(int v));
     MOCK_METHOD1(set_y, void(int v));
 
+    MOCK_METHOD3(compute_dynamic_sum, int(int a, int b, int c));
     // Template methods
     MOCK_METHOD0(get_res, int());
     //MOCK_METHOD0(get_res_wrapper, int());

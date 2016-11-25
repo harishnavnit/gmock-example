@@ -17,7 +17,7 @@ TEST(ProgramTest, CalculatesResult) {
     // Set expectations
     EXPECT_CALL(prod._t, get_x()).Times(AtLeast(1));
     EXPECT_CALL(prod._t, get_y()).Times(AtLeast(1));
-    EXPECT_CALL(prod._t, get_res_wrapper()).Times(AtLeast(1));
+    //EXPECT_CALL(prod._t, get_res_wrapper()).Times(AtLeast(1));
 
 
     // Make calls to the methods.
